@@ -1,20 +1,25 @@
 <% if @project.repository && @project.repository.is_a?(Repository::Git) %>
 <% repo_urls = Gitosis::get_urls(@project) %>
-<div class="box">
-    <h3>Git Repository</h3>
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'gitosis', :plugin => 'redmine_gitosis' %>
+<% end %>
+<div class="gitosis box">
+    <h3><%= l(:git_repository) %></h3>
 
-    <h4>Developer URL</h4>
+    <h4><%= l(:developer_url) %></h4>
     <ul>
         <% repo_urls[:developer].each do |url| %>
         <li><%= url %></li>
         <% end %>
     </ul>
 
-    <h4>Read-Only URL</h4>
+    <% if @project.is_public? %>
+    <h4><%= l(:readonly_url) %></h4>
     <ul>
         <% repo_urls[:read_only].each do |url| %>
         <li><%= url %></li>
         <% end %>
     </ul>
+    <% end %>
 </div>
 <% end %>

@@ -1,16 +1,19 @@
 'es':
-  label_public_keys: Public keys
-  label_public_key_new: New public key
+  label_public_keys: Claves públicas
+  label_public_key_new: Nueva clave pública
   label_gitosis_url: Gitosis URL
   label_gitosis_identity_file: Gitosis identity file
   label_base_path: Base path
   label_developer_base_urls: Developer base URL(s)
   label_read_only_base_urls: Read-only base URL(s)
   field_public_key: Key 
-  notice_public_key_updated: Public key was successfully updated.
-  notice_public_key_added: Public key was successfully added.
+  notice_public_key_updated: La clave se actualizó.
+  notice_public_key_added: La clave se añadió.
   
-  label_key_cannot_be_changed_please_create_new_key: 'The key cannot be altered anymore. However, you can deactivate it and create a new one.'
+  label_key_cannot_be_changed_please_create_new_key: 'La clave no se puede modificar, pero puede desactivarla y añadir una nueva'
+  git_repository: Repositorio git
+  developer_url: URL para desarrolladores
+  readonly_url: URL pública (sólo lectura)
 
   activerecord:
     errors:

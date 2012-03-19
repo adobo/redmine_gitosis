@@ -12,6 +12,9 @@
   notice_public_key_added: Public key was successfully added.
   
   label_key_cannot_be_changed_please_create_new_key: 'The key cannot be altered anymore. However, you can deactivate it and create a new one.'
+  git_repository: Git Repository
+  developer_url: Developer URL
+  readonly_url: Read-Only URL
 
   activerecord:
     errors:
